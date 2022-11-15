@@ -148,6 +148,11 @@ public class BuscarFuncionarioView extends javax.swing.JFrame {
         btnVisualizar.setText("Visualizar");
 
         btnVerBonus.setText("Ver bônus");
+        btnVerBonus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerBonusActionPerformed(evt);
+            }
+        });
 
         btnNovo.setText("Novo");
 
@@ -197,6 +202,12 @@ public class BuscarFuncionarioView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVerBonusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerBonusActionPerformed
+      
+        VerBonus telaVerBonus = new VerBonus();
+        telaVerBonus.setVisible(true);
+    }//GEN-LAST:event_btnVerBonusActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
